@@ -1,26 +1,25 @@
-import PopupApp from './Components/PopupExt';
-import MainApp from './Components/Mainpage';
-import logo from './logo.svg';
-import './App.css';
+import Login from './Components/Login';
 import {
   BrowserRouter,
+  MemoryRouter,
   Routes,
   Route,
   Link,
 } from "react-router-dom";
 
 
+
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/mainapp" element={<MainApp />} />
-        <Route path="/" element={<PopupApp />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <MemoryRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </MemoryRouter>
 
-  );
+    </>);
 
 }
 
