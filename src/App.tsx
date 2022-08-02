@@ -12,16 +12,14 @@ import {
 
 function App() {
 
-
-  return (<>
-    {/* <PopupApp /> */}
+  return (
     <BrowserRouter>
       <Routes>
         <Route path="/mainapp" element={<MainApp />} />
         <Route path="/" element={<PopupApp />} />
       </Routes>
     </BrowserRouter>
-  </>
+
   );
 
 }
